@@ -1,0 +1,91 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Montserrat;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#AB4D12), to(#BFDAF4));
+  background-image: linear-gradient(0deg, #AB4D12 0%, #BFDAF4 100%);
+  color: #000;
+}
+
+nav {
+  background-color: #f0f8ff8f;
+  padding: 25px 0px;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav img {
+  height: 35px;
+  border-radius: 50%;
+  border: dashed 1px;
+}
+
+nav a {
+  line-height: 39px;
+  text-decoration: none;
+  color: inherit;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #c7997c75;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.nav__number {
+  max-height: 27px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 27px;
+  border: dashed 1px;
+  word-spacing: none;
+}
+
+main {
+  background-color: #f0f8ff8f;
+  padding: 50px 10%;
+  font-size: 15px;
+  text-align: justify;
+  margin: 90px 0;
+}
+
+footer {
+  background-color: #f0f8ff8f;
+  font-size: 15px;
+  padding: 20px 15%;
+  display: block;
+  position: relative;
+  bottom: 0;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.footer__note {
+  padding: 0 5%;
+}
+/*# sourceMappingURL=style.css.map */

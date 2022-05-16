@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html language="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>LittleTooMercy | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus|Marcellus+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+
+                $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:6,
+            nav:true,
+            loop:false
+        }
+    }
+});
+
+});
+        </script>
+
+    <nav>
+        <div id="logoname"><a href="index.html">littletoomercy</a></div>
+        <div id="links">
+            <a href="index.html">home</a>
+            <a class="set" href="">experience</a>
+            <a href="">about me</a>
+            <a href="">contact</a>
+        </div>
+    </nav>
+    <div id="container">
+        <div id="board">
+            <div class="undercard">
+                <div class="card owl-carousel navClass" id="translation">
+                                <img src="Translations/rullo.jpg">
+                                <img src="Translations/rullo.jpg">
+                                <img src="Translations/rullo.jpg">
+                                <img src="Translations/rullo.jpg">
+                                <img src="Translations/rullo.jpg">
+                                <img src="Translations/rullo.jpg">
+                                <img src="Translations/rullo.jpg">
+
+                </div>
+                </div>
+    </div>
+
+    <button id="reload">reload</button>
+    <div id="hamburger"><i class="fas fa-bars"></i></div>
+
+    <div id="sidenav">
+        <div id="cancel"><i class="fas fa-times"></i></div>
+        <div id="sidelinks">
+            <a href="index.html">home</a><br>
+            <a class="set" href="">experience</a>
+            <a href="">about me</a>
+            <a href="">contact</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

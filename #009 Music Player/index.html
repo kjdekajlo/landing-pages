@@ -1,0 +1,75 @@
+<DOCTYPE! HTML>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>DailyUI #009 - Music Player</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+
+        <link href="https://fonts.googleapis.com/css?family=Archivo|Mallanna|Muli|Noto+Sans+TC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Poppins" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div id="devtool">
+            <button onclick="ShowHide()"></button>
+            <div id="devtool-content">
+                <h3 class="devtool-heading">Colors: </h3>
+                <div class="devtool-flex">
+                    <div class="dt-flex">
+                        <div class="devtool-color"></div>
+                        <p class="devtool-color-name">#3A3669</p>
+                    </div>
+                    <div class="dt-flex">
+                        <div class="devtool-color"></div>
+                        <p class="devtool-color-name">#FFDB14</p>
+                    </div>
+                    <div class="dt-flex">
+                        <div class="devtool-color"></div>
+                        <p class="devtool-color-name">#7873B4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            for (var i = 0; i < 100; i++) {
+                var color = document.getElementsByClassName("devtool-color-name")[i].innerHTML;
+                document.getElementsByClassName("devtool-color")[i].style.backgroundColor = color;
+            }
+
+            function ShowHide() {
+                var a = document.getElementById("devtool-content");
+                if (a.style.display === "block") {
+                    a.style.display = "none";
+                } else {
+                    a.style.display = "block";
+                }
+            }
+        </script>
+        <div id="container">
+            <div id="top">
+               <i class="fas fa-angle-left"></i>
+                <p>Hearme</p>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div id="music">
+                <img src="hfk.jpg" class="cover"/>
+                <div id="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider">
+  <div id="numbers">
+  <p>02:28</p><p>03:04</p>
+  </div>
+</div>
+                
+            </div>
+        </div>
+    </body>
+
+    </html>
+</DOCTYPE!>

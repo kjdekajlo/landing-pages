@@ -1,0 +1,92 @@
+<DOCTYPE! HTML>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>DailyUI #042 - ToDo List</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+
+        <link href="https://fonts.googleapis.com/css?family=Krub|Raleway" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+
+            $(function() {
+            for (var i = 0; i < 100; i++) {
+                var color = $(".dt-color").eq(i).text();
+                $(".dt-color").eq(i).css({"background-color": color});
+                }
+            
+            $("#dt-button").on("click", function() {
+                $("#devtool-content").toggle();
+            });
+                
+                $("#dt-color").on("click", function() {
+ var range = document.createRange();
+             range.selectNode(document.getElementById("dt-color"));
+             window.getSelection().removeAllRanges();
+             window.getSelection().addRange(range);
+             document.execCommand("copy");
+});
+            });
+            
+        </script>
+    </head>
+
+    <body>
+        <div id="devtool">
+            <button id="dt-button"></button>
+
+
+            <div id="devtool-content">
+                <div id="dt-panel">
+
+                    <button id="dt"></button>
+                </div>
+                <h3 class="dt-heading">Colors: </h3>
+                <div class="dt-section-body">
+                    <button class="dt-color">#F16192</button>
+
+                    <button class="dt-color">#E55C8A</button>
+
+                    <button class="dt-color">#3c424a</button>
+                    <button class="dt-color">#3c424a</button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="container">
+            <div id="main">
+                <nav>
+                    <a href="" class="checked">Day</a>
+                    <a href="">Week</a>
+                    <a href="">Month</a>
+                    <a href="">Year</a>
+                </nav>
+
+                <div id="name">
+                    <div id="day">
+                        <h1>Thursday</h1>
+                    </div>
+                    <div id="date">
+                        <p>Mar 23, 2017</p>
+                    </div>
+                </div>
+                <div id="searchbox">
+                    <i class="fas fa-list-ul"></i>
+                    <input type="textarea" placeholder="Add a task" />
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+    </html>
+</DOCTYPE!>
